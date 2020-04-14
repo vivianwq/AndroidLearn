@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffc"
+    android:orientation="vertical"
+    tools:context=".status.StatusBarActivity1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通过Activity所属的Window"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnShowByWindow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="显示" />
+
+            <Button
+                android:id="@+id/btnHideByWindow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隐藏" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#fcf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通过Activity所属的DecorView"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnShowByDecorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="显示" />
+
+            <Button
+                android:id="@+id/btnHideByDecorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隐藏" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#fcf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通过代码设置状态栏透明" />
+
+        <Button
+            android:id="@+id/btnShowTransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐藏" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#fcf" />
+
+    <Button
+        android:id="@+id/btnChangeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="改变状态栏颜色" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#fcf" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通过代码设置状态栏透明--单纯改变布局关系" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnShowByWindowChangeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="显示" />
+
+            <Button
+                android:id="@+id/btnHideByWindowChangeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隐藏" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
