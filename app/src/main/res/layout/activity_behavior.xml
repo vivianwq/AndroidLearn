@@ -5,30 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".materialdesign.BehaviorActivity">
+    tools:context=".materialdesign.behavior.BehaviorActivity">
 
     <Button
-        android:text="scroll"
         android:id="@+id/btnScroll"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="scroll" />
 
     <Button
-        android:text="嵌套滑动"
-        android:layout_marginTop="80dp"
         android:id="@+id/btnRecycler"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="嵌套滑动" />
+
+
     <Button
+        android:id="@+id/btnNested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="AppBarLayout" />
+
+    <com.wq.andoidlearning.materialdesign.behavior.MyButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="300dp"
         android:layout_marginTop="300dp"
         android:background="#FFCC00"
         android:text="Hello"
-        app:layout_behavior="com.wq.andoidlearning.materialdesign.MyBehavior" />
+         />
 
-    <com.wq.andoidlearning.materialdesign.TempView
+    <com.wq.andoidlearning.materialdesign.behavior.TempView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginLeft="300dp"

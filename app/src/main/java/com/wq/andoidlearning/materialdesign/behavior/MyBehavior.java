@@ -1,4 +1,4 @@
-package com.wq.andoidlearning.materialdesign;
+package com.wq.andoidlearning.materialdesign.behavior;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -9,9 +9,18 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
+import com.wq.andoidlearning.MyApp;
+
 public class MyBehavior extends CoordinatorLayout.Behavior<Button> {
 
     private int width;
+
+    public MyBehavior() {
+        DisplayMetrics displayMetrics = MyApp.myApp.getResources().getDisplayMetrics();
+        this.width = displayMetrics.widthPixels;
+    }
+
+
 
 
     public MyBehavior(Context context, AttributeSet attrs) {

@@ -1,4 +1,4 @@
-package com.wq.andoidlearning.materialdesign;
+package com.wq.andoidlearning.materialdesign.behavior;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.wq.andoidlearning.R;
 import com.wq.andoidlearning.materialdesign.nested.NestedScrollActivity;
+import com.wq.andoidlearning.materialdesign.nestedscrollview.NestedScrollViewActivity;
 import com.wq.andoidlearning.materialdesign.recycler.RecyclerViewActivity;
 
 public class BehaviorActivity extends AppCompatActivity {
@@ -32,6 +33,16 @@ public class BehaviorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(BehaviorActivity.this,
                         RecyclerViewActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        findViewById(R.id.btnNested).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BehaviorActivity.this,
+                        NestedScrollViewActivity.class);
                 startActivity(intent);
 
             }

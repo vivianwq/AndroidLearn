@@ -3,15 +3,22 @@
     package="com.wq.andoidlearning">
 
     <application
+        android:name=".MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".materialdesign.recycler.RecyclerViewActivity"></activity>
+        <activity android:name=".materialdesign.nested.NestedDemosActivity"></activity>
+        <activity android:name=".materialdesign.nested.Demo1Activity" />
+        <activity android:name=".materialdesign.titlebar.TitleBarActivity" />
+        <activity android:name=".materialdesign.MainMaterialActivity" />
+        <activity android:name=".materialdesign.appbar.AppBarLayoutActivity" />
+        <activity android:name=".materialdesign.nestedscrollview.NestedScrollViewActivity" />
+        <activity android:name=".materialdesign.recycler.RecyclerViewActivity" />
         <activity android:name=".materialdesign.nested.NestedScrollActivity" />
-        <activity android:name=".materialdesign.BehaviorActivity" />
+        <activity android:name=".materialdesign.behavior.BehaviorActivity" />
         <activity android:name=".status.StatusBarActivity1" />
         <activity android:name=".MainActivity">
             <intent-filter>
