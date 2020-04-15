@@ -7,6 +7,8 @@ import android.view.View;
 
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
+
+
 public class TempView extends View {
 
     private int lastX;

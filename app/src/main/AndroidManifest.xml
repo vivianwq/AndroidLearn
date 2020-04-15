@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".materialdesign.BehaviorActivity"></activity>
+        <activity android:name=".materialdesign.recycler.RecyclerViewActivity"></activity>
+        <activity android:name=".materialdesign.nested.NestedScrollActivity" />
+        <activity android:name=".materialdesign.BehaviorActivity" />
         <activity android:name=".status.StatusBarActivity1" />
         <activity android:name=".MainActivity">
             <intent-filter>

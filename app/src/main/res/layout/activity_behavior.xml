@@ -8,6 +8,18 @@
     tools:context=".materialdesign.BehaviorActivity">
 
     <Button
+        android:text="scroll"
+        android:id="@+id/btnScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="嵌套滑动"
+        android:layout_marginTop="80dp"
+        android:id="@+id/btnRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="300dp"
@@ -21,6 +33,6 @@
         android:layout_height="100dp"
         android:layout_marginLeft="300dp"
         android:layout_marginTop="200dp"
-        android:background="#fcf" />
+        android:background="#3366CC" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
