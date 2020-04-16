@@ -10,15 +10,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".materialdesign.nested.NestedDemosActivity"></activity>
-        <activity android:name=".materialdesign.nested.Demo1Activity" />
+        <activity android:name=".materialdesign.behavior.demo2.Behavior2Activity"></activity>
+        <activity android:name=".materialdesign.behavior.BehaviorMainActivity" />
+        <activity android:name=".materialdesign.behavior.demo1.Behavior1Activity" />
+        <activity android:name=".materialdesign.floating.FloatingButtonActivity" />
+        <activity android:name=".materialdesign.nested.demo2.Demo2Activity" />
+        <activity android:name=".materialdesign.nested.NestedDemosActivity" />
+        <activity android:name=".materialdesign.nested.demo1.Demo1Activity" />
         <activity android:name=".materialdesign.titlebar.TitleBarActivity" />
         <activity android:name=".materialdesign.MainMaterialActivity" />
         <activity android:name=".materialdesign.appbar.AppBarLayoutActivity" />
         <activity android:name=".materialdesign.nestedscrollview.NestedScrollViewActivity" />
         <activity android:name=".materialdesign.recycler.RecyclerViewActivity" />
         <activity android:name=".materialdesign.nested.NestedScrollActivity" />
-        <activity android:name=".materialdesign.behavior.BehaviorActivity" />
+        <activity android:name=".materialdesign.behavior.demo3.BehaviorActivity" />
         <activity android:name=".status.StatusBarActivity1" />
         <activity android:name=".MainActivity">
             <intent-filter>

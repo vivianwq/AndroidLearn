@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wq.andoidlearning.materialdesign.nested.demo2.ElemeDetailView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edvParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".materialdesign.nested.demo2.Demo2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/ic_launcher"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/edvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B9470F"
+            android:padding="10dp"
+            android:text="魔兽世界"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/edvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edvContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+    </LinearLayout>
+
+</com.wq.andoidlearning.materialdesign.nested.demo2.ElemeDetailView>

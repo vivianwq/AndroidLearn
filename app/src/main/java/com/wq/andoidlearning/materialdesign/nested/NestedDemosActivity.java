@@ -7,6 +7,8 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.wq.andoidlearning.R;
+import com.wq.andoidlearning.materialdesign.nested.demo1.Demo1Activity;
+import com.wq.andoidlearning.materialdesign.nested.demo2.Demo2Activity;
 
 public class NestedDemosActivity extends AppCompatActivity {
 
@@ -20,6 +22,16 @@ public class NestedDemosActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(NestedDemosActivity.this,
                         Demo1Activity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        findViewById(R.id.btnDemo2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(NestedDemosActivity.this,
+                        Demo2Activity.class);
                 startActivity(intent);
 
             }

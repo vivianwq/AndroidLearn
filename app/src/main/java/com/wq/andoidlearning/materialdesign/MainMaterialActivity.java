@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.wq.andoidlearning.R;
 import com.wq.andoidlearning.materialdesign.appbar.AppBarLayoutActivity;
+import com.wq.andoidlearning.materialdesign.behavior.BehaviorMainActivity;
+import com.wq.andoidlearning.materialdesign.floating.FloatingButtonActivity;
 import com.wq.andoidlearning.materialdesign.nested.NestedDemosActivity;
 import com.wq.andoidlearning.materialdesign.nestedscrollview.NestedScrollViewActivity;
 import com.wq.andoidlearning.materialdesign.titlebar.TitleBarActivity;
@@ -54,6 +56,26 @@ public class MainMaterialActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainMaterialActivity.this,
                         NestedDemosActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        findViewById(R.id.btnFloatingButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainMaterialActivity.this,
+                        FloatingButtonActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        findViewById(R.id.btnBehaviorMain).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainMaterialActivity.this,
+                        BehaviorMainActivity.class);
                 startActivity(intent);
 
             }

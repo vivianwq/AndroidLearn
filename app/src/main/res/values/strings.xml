@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">AndoidLearning</string>
+    <string name="dependency_behavior">com.wq.andoidlearning.materialdesign.behavior.DependencyBehavior1</string>
+
     <string name="large_text">sfs方式按发送放散阀 按时方式发方式 啊分身乏术方式吗
     发按时发是发卡机付军二二二二二二二二二二二二二二二二二二二二二二二二二二发卡方了sfs方式按发送放散阀 按时方式发方式 啊分身乏术方式吗
     发按时发是发卡机付军二二二二二二二二二二二二二二二二二二二二二二二二二二发卡方了

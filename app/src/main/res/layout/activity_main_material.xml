@@ -33,4 +33,18 @@
         android:text="Nested嵌套"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btnFloatingButton"
+        android:text="FloatingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btnBehaviorMain"
+        android:text="BehaviorMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>

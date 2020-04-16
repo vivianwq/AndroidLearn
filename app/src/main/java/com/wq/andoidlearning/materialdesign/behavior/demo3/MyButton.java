@@ -1,4 +1,4 @@
-package com.wq.andoidlearning.materialdesign.behavior;
+package com.wq.andoidlearning.materialdesign.behavior.demo3;
 
 import android.content.Context;
 import android.util.AttributeSet;
