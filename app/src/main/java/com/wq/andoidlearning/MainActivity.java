@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.wq.andoidlearning.dagger.DaggerMainActivity;
 import com.wq.andoidlearning.materialdesign.MainMaterialActivity;
 import com.wq.andoidlearning.status.StatusBarActivity1;
 
@@ -27,6 +28,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MainMaterialActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btnDagger).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DaggerMainActivity.class);
                 startActivity(intent);
             }
         });

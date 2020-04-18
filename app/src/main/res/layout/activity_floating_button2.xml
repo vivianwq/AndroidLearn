@@ -55,14 +55,19 @@
 
     </androidx.core.widget.NestedScrollView>
 
+    <include
+        android:id="@+id/bottom_sheet"
+        layout="@layout/layout_bottom_sheet_linear" />
+
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_anchorGravity="bottom|end"
         android:layout_margin="10dp"
         android:src="@android:drawable/ic_dialog_email"
         app:backgroundTint="@color/colorPrimary"
-        app:layout_anchor="@id/appbarLayout" />
+        app:layout_anchor="@id/bottom_sheet"
+        app:layout_anchorGravity="end" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 

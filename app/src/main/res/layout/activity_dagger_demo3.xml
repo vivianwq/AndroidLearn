@@ -5,25 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".dagger.demo1.DaggerDemo1Activity">
 
     <Button
-        android:id="@+id/btnStatusBar"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnGetData"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="状态栏" />
-
+        android:text="获取本地数据" />
 
     <Button
-        android:id="@+id/btnBehavior"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnGetNetData"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Material Design" />
+        android:text="获取网络数据" />
 
-
-    <Button
-        android:id="@+id/btnDagger"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dagger" />
+        android:layout_marginTop="20dp" />
+
 </LinearLayout>

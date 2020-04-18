@@ -5,25 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".materialdesign.tablayout.TabLayoutMainActivity">
 
     <Button
-        android:id="@+id/btnStatusBar"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnDemo1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="状态栏" />
-
-
-    <Button
-        android:id="@+id/btnBehavior"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Material Design" />
+        android:text="关联ViewPager" />
 
 
     <Button
-        android:id="@+id/btnDagger"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnDemo2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dagger" />
+        android:text="代码新建" />
+
 </LinearLayout>

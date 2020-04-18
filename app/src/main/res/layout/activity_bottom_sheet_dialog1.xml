@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".materialdesign.bottomsheet.BottomSheetDialog1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="expandBottomSheet"
+            android:text="Expand(展开) BottomSheet" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="hideBottomSheet"
+            android:text="Hide(隐藏) BottomSheet" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="collapseBottomSheet"
+            android:text="Collapse(收缩) BottomSheet" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_bottom_sheet_linear" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

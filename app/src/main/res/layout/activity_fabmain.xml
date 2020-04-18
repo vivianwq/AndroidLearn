@@ -5,25 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".materialdesign.floating.FABMainActivity">
 
     <Button
-        android:id="@+id/btnStatusBar"
+        android:id="@+id/btnDemo1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="状态栏" />
-
-
-    <Button
-        android:id="@+id/btnBehavior"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Material Design" />
+        android:text="fab关联AppBarLayout" />
 
 
     <Button
-        android:id="@+id/btnDagger"
+        android:id="@+id/btnDemo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dagger" />
+        android:text="fab关联BottomSheet" />
+
+    <Button
+        android:id="@+id/btnDemo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fab关联SnackBar" />
+
+    <Button
+        android:id="@+id/btnDemo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fab关联列表" />
 </LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".materialdesign.tablayout.TabLayout2Activity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="第一个Tab" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="第二个Tab" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="第三个Tab" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <Button
+        android:id="@+id/btnAddDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加tab竖向分割线" />
+
+    <Button
+        android:id="@+id/btnChangeLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义指示条长度" />
+
+</LinearLayout>

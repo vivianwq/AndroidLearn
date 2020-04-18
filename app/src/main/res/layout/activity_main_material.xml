@@ -9,42 +9,81 @@
 
     <Button
         android:id="@+id/btnAppBar"
-        android:text="AppBarLayout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="AppBarLayout" />
 
 
     <Button
         android:id="@+id/btnAppBar2"
-        android:text="AppBarLayout2(使用CollapsingToolbarLayout)"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="AppBarLayout2(使用CollapsingToolbarLayout)" />
 
 
     <Button
         android:id="@+id/btnTitleBar"
-        android:text="TitleBar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="TitleBar" />
 
 
     <Button
         android:id="@+id/btnNested"
-        android:text="Nested嵌套"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Nested嵌套" />
 
 
     <Button
         android:id="@+id/btnFloatingButton"
-        android:text="FloatingButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="FloatingButton" />
 
 
     <Button
         android:id="@+id/btnBehaviorMain"
-        android:text="BehaviorMain"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="BehaviorMain" />
+
+    <Button
+        android:id="@+id/btnBottomSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BottomSheet" />
+
+    <Button
+        android:id="@+id/btnDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="抽屉布局" />
+
+
+    <Button
+        android:id="@+id/btnSnackBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SnackBar显示" />
+
+    <Button
+        android:id="@+id/btnBottomBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BottomBar布局" />
+
+
+    <Button
+        android:id="@+id/btnTabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TabLayout" />
+
+
+    <Button
+        android:id="@+id/btnTextInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextInputLayout" />
 </LinearLayout>

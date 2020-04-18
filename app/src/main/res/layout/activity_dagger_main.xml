@@ -5,25 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".dagger.DaggerMainActivity">
 
     <Button
-        android:id="@+id/btnStatusBar"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnDemo1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="状态栏" />
-
-
-    <Button
-        android:id="@+id/btnBehavior"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Material Design" />
+        android:text="Dagger1--两种依赖注入的实现" />
 
 
     <Button
-        android:id="@+id/btnDagger"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnDemo2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dagger" />
+        android:text="Dagger2" />
+
+
+    <Button
+        android:id="@+id/btnDemo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="依赖和继承关系" />
 </LinearLayout>
