@@ -39,4 +39,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="设计模式" />
+
+    <Button
+        android:id="@+id/btnARouter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ARouter" />
 </LinearLayout>

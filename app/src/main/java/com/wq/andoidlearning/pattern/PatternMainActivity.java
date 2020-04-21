@@ -15,7 +15,6 @@ public class PatternMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pattern_main);
-
         findViewById(R.id.btnAdapter).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

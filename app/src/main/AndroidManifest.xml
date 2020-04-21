@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".dagger.demo4.app.ScopeApp"
+        android:name=".MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".pattern.adapter.PatternDemo1Activity"></activity>
+        <activity android:name=".arouter.ARouterMainActivity"></activity>
+        <activity android:name=".pattern.adapter.PatternDemo1Activity" />
         <activity android:name=".pattern.PatternMainActivity" />
         <activity android:name=".rxjava.demo11.RxJavaDemo11Activity" />
         <activity android:name=".rxjava.demo10.RxJavaDemo10Activity" />

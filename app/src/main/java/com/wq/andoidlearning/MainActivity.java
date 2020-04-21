@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.wq.andoidlearning.arouter.ARouterMainActivity;
 import com.wq.andoidlearning.dagger.DaggerMainActivity;
 import com.wq.andoidlearning.materialdesign.MainMaterialActivity;
 import com.wq.andoidlearning.pattern.PatternMainActivity;
@@ -54,6 +55,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, PatternMainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btnARouter).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ARouterMainActivity.class);
                 startActivity(intent);
             }
         });
