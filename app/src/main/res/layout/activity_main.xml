@@ -26,4 +26,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dagger" />
+
+
+    <Button
+        android:id="@+id/btnRxJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RxJava" />
+
+    <Button
+        android:id="@+id/btnPattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设计模式" />
 </LinearLayout>

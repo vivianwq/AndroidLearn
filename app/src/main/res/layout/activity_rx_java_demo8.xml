@@ -5,32 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".dagger.DaggerMainActivity">
+    tools:context=".rxjava.RxJavaDemo8Activity">
 
     <Button
-        android:id="@+id/btnDemo1"
+        android:id="@+id/btnConcat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dagger1--两种依赖注入的实现" />
-
+        android:text="concat操作符" />
 
     <Button
-        android:id="@+id/btnDemo2"
+        android:id="@+id/btnConcatEager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dagger2" />
-
+        android:text="concatEager操作符" />
 
     <Button
-        android:id="@+id/btnDemo3"
+        android:id="@+id/btnMerge"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="依赖和继承关系" />
-
+        android:text="merge操作符" />
 
     <Button
-        android:id="@+id/btnDemo4"
+        android:id="@+id/btnPublish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="查看@Scope注解" />
+        android:text="publish操作符" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
 </LinearLayout>

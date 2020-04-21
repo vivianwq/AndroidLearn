@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.wq.andoidlearning.dagger.DaggerMainActivity;
 import com.wq.andoidlearning.materialdesign.MainMaterialActivity;
+import com.wq.andoidlearning.pattern.PatternMainActivity;
+import com.wq.andoidlearning.rxjava.RxJavaDemoMainActivity;
 import com.wq.andoidlearning.status.StatusBarActivity1;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,6 +42,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btnRxJava).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RxJavaDemoMainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btnPattern).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PatternMainActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

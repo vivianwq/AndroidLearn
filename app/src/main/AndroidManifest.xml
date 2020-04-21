@@ -2,15 +2,33 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wq.andoidlearning">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
-        android:name=".MyApp"
+        android:name=".dagger.demo4.app.ScopeApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".dagger.demo3.DaggerDemo3Activity"></activity>
+        <activity android:name=".pattern.adapter.PatternDemo1Activity"></activity>
+        <activity android:name=".pattern.PatternMainActivity" />
+        <activity android:name=".rxjava.demo11.RxJavaDemo11Activity" />
+        <activity android:name=".rxjava.demo10.RxJavaDemo10Activity" />
+        <activity android:name=".rxjava.RxJavaDemo9Activity" />
+        <activity android:name=".rxjava.RxJavaDemo8Activity" />
+        <activity android:name=".rxjava.RxJavaDemo7Activity" />
+        <activity android:name=".rxjava.RxJavaDemo6Activity" />
+        <activity android:name=".rxjava.RxJavaDemo5Activity" />
+        <activity android:name=".rxjava.demo4.RxJavaDemo4Activity" />
+        <activity android:name=".rxjava.RxJavaDemo3Activity" />
+        <activity android:name=".rxjava.RxJavaDemo2Activity" />
+        <activity android:name=".rxjava.RxJavaDemoMainActivity" />
+        <activity android:name=".rxjava.RxJavaDemo1Activity" />
+        <activity android:name=".dagger.demo3.DaggerDemo3Activity" />
         <activity android:name=".dagger.demo2.DaggerDemo2Activity" />
         <activity android:name=".dagger.DaggerMainActivity" />
         <activity android:name=".dagger.demo1.DaggerDemo1Activity" />
@@ -45,6 +63,7 @@
         <activity android:name=".materialdesign.nested.NestedScrollActivity" />
         <activity android:name=".materialdesign.behavior.demo3.BehaviorActivity" />
         <activity android:name=".status.StatusBarActivity1" />
+        <activity android:name=".dagger.demo4.activity.ScopeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

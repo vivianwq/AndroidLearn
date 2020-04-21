@@ -10,6 +10,7 @@ import com.wq.andoidlearning.R;
 import com.wq.andoidlearning.dagger.demo1.DaggerDemo1Activity;
 import com.wq.andoidlearning.dagger.demo2.DaggerDemo2Activity;
 import com.wq.andoidlearning.dagger.demo3.DaggerDemo3Activity;
+import com.wq.andoidlearning.dagger.demo4.activity.ScopeActivity;
 
 public class DaggerMainActivity extends AppCompatActivity {
 
@@ -35,6 +36,13 @@ public class DaggerMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DaggerMainActivity.this, DaggerDemo3Activity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.btnDemo4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DaggerMainActivity.this, ScopeActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".rxjava.RxJavaDemoMainActivity">
+
+    <Button
+        android:id="@+id/btnDemo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="线程切换" />
+
+    <Button
+        android:id="@+id/btnDemo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buffer操作符" />
+
+    <Button
+        android:id="@+id/btnDemo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="优化搜索联想功能" />
+
+    <Button
+        android:id="@+id/btnDemo4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="zip操作符" />
+
+    <Button
+        android:id="@+id/btnDemo5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="轮询操作--repeatWhen操作符" />
+
+    <Button
+        android:id="@+id/btnDemo6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重试操作--retryWhen操作符" />
+
+    <Button
+        android:id="@+id/btnDemo7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="双重条件判断操作--combineLatest操作符" />
+
+
+    <Button
+        android:id="@+id/btnDemo8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="publish+merge--先缓存,后网络" />
+
+    <Button
+        android:id="@+id/btnDemo9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="timer--时间操作符" />
+
+    <Button
+        android:id="@+id/btnDemo10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生命周期重建" />
+
+    <Button
+        android:id="@+id/btnDemo11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="检测网络状态并重试请求" />
+</LinearLayout>

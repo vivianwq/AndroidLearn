@@ -5,32 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".dagger.DaggerMainActivity">
+    tools:context=".rxjava.RxJavaDemo9Activity">
 
     <Button
         android:id="@+id/btnDemo1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dagger1--两种依赖注入的实现" />
-
+        android:text="延时1s" />
 
     <Button
         android:id="@+id/btnDemo2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dagger2" />
-
+        android:text="interval操作符" />
 
     <Button
         android:id="@+id/btnDemo3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="依赖和继承关系" />
-
+        android:text="interval操作符--立即执行" />
 
     <Button
         android:id="@+id/btnDemo4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="查看@Scope注解" />
+        android:text="interval操作符--立即执行-五次" />
+
+    <Button
+        android:id="@+id/btnDemo5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delay操作符" />
 </LinearLayout>
