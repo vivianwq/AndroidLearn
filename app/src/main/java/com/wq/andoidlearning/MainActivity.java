@@ -12,6 +12,8 @@ import com.wq.andoidlearning.materialdesign.MainMaterialActivity;
 import com.wq.andoidlearning.pattern.PatternMainActivity;
 import com.wq.andoidlearning.rxjava.RxJavaDemoMainActivity;
 import com.wq.andoidlearning.status.StatusBarActivity1;
+import com.wq.andoidlearning.trace.TraceViewActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        StatusBarActivity1.setStatusBarTransparent(MainActivity.this);
+//        setUp();
         setContentView(R.layout.activity_main);
         findViewById(R.id.btnStatusBar).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,5 +70,30 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btnSmall).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Small.openUri("small", MainActivity.this);
+                Intent intent = new Intent(MainActivity.this, DebugActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btnTrace).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TraceViewActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    private void setUp() {
+//        Small.setUp(this, new Small.OnCompleteListener() {
+//            @Override
+//            public void onComplete() {
+//                Log.d("MainActivity", "onComplete");
+//            }
+//        });
     }
 }

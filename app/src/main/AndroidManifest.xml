@@ -14,7 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".arouter.ARouterMainActivity"></activity>
+        <activity android:name=".trace.TraceViewActivity"></activity>
+        <activity android:name=".DebugActivity" />
+        <activity android:name=".arouter.ARouterMainActivity" />
         <activity android:name=".pattern.adapter.PatternDemo1Activity" />
         <activity android:name=".pattern.PatternMainActivity" />
         <activity android:name=".rxjava.demo11.RxJavaDemo11Activity" />
@@ -72,6 +74,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.wq.module_other.InterTargetActivity" />
+        <activity android:name="com.wq.module_other.InterMiddleActivity" />
+        <activity android:name="com.wq.module_other.ResultServerActivity" />
+        <activity android:name="com.wq.module_other.SettingActivity" />
+        <activity android:name="com.wq.module_other.EventBusActivity" />
+        <activity android:name="com.wq.module_other.InjectActivity" />
+        <activity android:name="com.wq.module_other.NoResultActivity" />
+        <activity android:name="com.wq.module_home.ResultClientActivity" />
     </application>
 
 </manifest>

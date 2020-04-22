@@ -39,13 +39,13 @@ dependencies {
 
     implementation config.dependencies["arouter"]
     implementation project(":lib_base")
-    if(isNeedHomeModule.toBoolean()) {
+    if (isNeedHomeModule.toBoolean()) {
         implementation project(":module_home")
     }
-    if(isNeedOtherModule.toBoolean()) {
+    if (isNeedOtherModule.toBoolean()) {
         implementation project(":module_other")
     }
-    if(isNeedStoreModule.toBoolean()) {
+    if (isNeedStoreModule.toBoolean()) {
         implementation project(":module_store")
     }
 }

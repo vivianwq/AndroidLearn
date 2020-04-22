@@ -15,7 +15,7 @@ android {
     defaultConfig {
 
         if (!isNeedOtherModule.toBoolean()) {
-            applicationId "com.wq.module.other"
+            applicationId "com.wq.module_other"
         }
         minSdkVersion config.android.minSdkVersion
         targetSdkVersion config.android.targetSdkVersion
