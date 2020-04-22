@@ -41,6 +41,7 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     api config.dependencies["fastjson"]
+    api config.dependencies["event-bus"]
     //在基础组件中,需要导入路由的运行期、编译依赖库
     implementation config.dependencies["arouter"]
     annotationProcessor config.dependencies["arouter-compiler"]

@@ -1,6 +1,6 @@
 def config = rootProject.ext
 
-if (isNeedHomeModule.toBoolean()) {
+if (isNeedOtherModule.toBoolean()) {
     apply plugin: 'com.android.library'
 } else {
     apply plugin: 'com.android.application'
@@ -14,7 +14,7 @@ android {
 
     defaultConfig {
 
-        if (!isNeedHomeModule.toBoolean()) {
+        if (!isNeedOtherModule.toBoolean()) {
             applicationId "com.wq.module.other"
         }
         minSdkVersion config.android.minSdkVersion
@@ -41,7 +41,7 @@ android {
 
     sourceSets {
         main {
-            if (!isNeedHomeModule.toBoolean()) {
+            if (!isNeedOtherModule.toBoolean()) {
                 manifest.srcFile 'src/debug/AndroidManifest.xml'
             } else {
                 manifest.srcFile 'src/main/AndroidManifest.xml'
