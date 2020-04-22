@@ -25,6 +25,7 @@ public class InjectActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        //需要额外调用这句话来进行依赖注入
         ARouter.getInstance().inject(this);
         Utils.toast(this,
                 "age=" + age

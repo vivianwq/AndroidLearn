@@ -12,18 +12,22 @@ import com.alibaba.android.arouter.launcher.ARouter;
 public class BaseInterceptor implements IInterceptor {
     @Override
     public void process(Postcard postcard, InterceptorCallback callback) {
+        //getExtra()对应目标Activity中的@Route声明
         if (postcard.getExtra() == ConstantMap.LOGIN_EXTRA) {
             boolean isLogin = postcard.getExtras()
                     .getBoolean(ConstantMap.IS_LOGIN);
             if (!isLogin) {
+                //如果没有登录,那么跳转到登录界面
                 ARouter.getInstance()
                         .build(RouterMap.INTER_MIDDLE_ACTIVITY)
                         .navigation();
             } else {
+                //否则继续放行
                 postcard.withString(ConstantMap.IS_LOGIN_EXTRA, "登录了!");
                 callback.onContinue(postcard);
             }
         } else {
+            //对于其他不需要登录的界面直接放行
             callback.onContinue(postcard);
         }
     }

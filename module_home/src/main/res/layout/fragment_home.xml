@@ -28,11 +28,11 @@
         android:id="@+id/btnInterButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="InterActivity" />
+        android:text="InterActivity--登录拦截器" />
 
     <Button
         android:id="@+id/btnInject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="InjectActivity" />
+        android:text="InjectActivity--传递值value" />
 </LinearLayout>
