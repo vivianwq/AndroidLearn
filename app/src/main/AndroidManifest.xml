@@ -14,7 +14,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".trace.TraceViewActivity"></activity>
+        <activity android:name=".bitmap.demo4.ScaleTypeActivity"></activity>
+        <activity android:name=".bitmap.demo3.BigImageView2Activity" />
+        <activity android:name=".bitmap.demo2.RecyclerViewBitmapActivity" />
+        <activity android:name=".bitmap.demo1.BigImageViewActivity" />
+        <activity android:name=".bitmap.BitmapMainActivity" />
+        <activity android:name=".trace.GPU_DemoActivity" />
+        <activity android:name=".trace.TraceViewMainActivity" />
+        <activity android:name=".trace.TraceViewActivity" />
         <activity android:name=".DebugActivity" />
         <activity android:name=".arouter.ARouterMainActivity" />
         <activity android:name=".pattern.adapter.PatternDemo1Activity" />

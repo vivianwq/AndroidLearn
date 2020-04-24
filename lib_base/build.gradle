@@ -1,6 +1,8 @@
 def config = rootProject.ext
 
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion config.android.compileSdkVersion
@@ -45,4 +47,9 @@ dependencies {
     //在基础组件中,需要导入路由的运行期、编译依赖库
     implementation config.dependencies["arouter"]
     annotationProcessor config.dependencies["arouter-compiler"]
+    compile "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }

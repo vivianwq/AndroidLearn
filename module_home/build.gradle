@@ -64,5 +64,12 @@ dependencies {
     annotationProcessor config.dependencies["arouter-compiler"]
     implementation project(":lib_base")
     implementation config.dependencies["arouter"]
+    compile "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
+}
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+repositories {
+    mavenCentral()
 }

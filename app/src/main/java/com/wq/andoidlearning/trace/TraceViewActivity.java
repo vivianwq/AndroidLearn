@@ -12,5 +12,12 @@ public class TraceViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trace_view);
+        TraceViewOperation.writeOnActivityOnCreate(this,1000);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        TraceViewOperation.writeOnActivityOnResume(this,1000);
     }
 }

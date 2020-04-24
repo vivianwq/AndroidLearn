@@ -2,7 +2,7 @@
 apply from:'config.gradle'
 
 buildscript {
-    ext.kotlin_version = '1.0.0'
+    ext.kotlin_version = '1.3.72'
     repositories {
         google()
         jcenter()
@@ -10,6 +10,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         //1.引入Small依赖，必选。
 //        classpath 'net.wequick.tools.build:gradle-small:1.2.0-alpha3'
 //        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"

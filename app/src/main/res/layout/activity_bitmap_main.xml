@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bitmap.BitmapMainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:src="@mipmap/test_1" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:src="@mipmap/test_2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:src="@mipmap/test_3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:src="@mipmap/test_4" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#ffd" />
+
+    <Button
+        android:id="@+id/btnLoadLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载巨图" />
+
+    <Button
+        android:id="@+id/btnDemo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载巨图--滑动方案2" />
+
+    <Button
+        android:id="@+id/btnDemo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView加载巨图" />
+
+    <Button
+        android:id="@+id/btnDemo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ScaleType多样式" />
+</LinearLayout>
