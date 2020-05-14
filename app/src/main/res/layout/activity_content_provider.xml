@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".component.service.ServiceActivity">
+
+    <Button
+        android:id="@+id/btnQueryDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询数据库相关数据--图书表" />
+
+    <Button
+        android:id="@+id/btnQueryUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询数据库相关数据--用户表" />
+
+    <Button
+        android:id="@+id/btnQueryContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询手机联系人表" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

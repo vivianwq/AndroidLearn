@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".component.broadcastreceiver.BroadCastMainActivity">
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="动态注册(系统网络广播)" />
+
+    <Button
+        android:id="@+id/btnSendSys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送系统网络广播" />
+
+    <Button
+        android:id="@+id/btnUnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消注册(系统网络广播)" />
+
+    <Button
+        android:id="@+id/btnSendNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送标准广播--自定义广播" />
+
+    <Button
+        android:id="@+id/btnSendOrdered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送有序广播(拦截并传递消息给下一层)--自定义广播" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
