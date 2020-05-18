@@ -12,7 +12,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".component.broadcastreceiver.BroadCastMainActivity"></activity>
+        <activity android:name=".window.recyclerview.RecyclerViewMainActivity"></activity>
+        <activity android:name=".window.viewlife.ViewLifeCycleActivity" />
+        <activity android:name=".window.dialogfragment.DialogFragmentActivity" />
+        <activity android:name=".window.WindowMainActivity" />
+        <activity android:name=".window.ToastViewActivity" />
+        <activity android:name=".component.fragment.androidx.NewFragmentVPActivity" />
+        <activity android:name=".component.fragment.androidx.AndroidXFragmentActivity" />
+        <activity android:name=".pull.PullStudentActivity" />
+        <activity android:name=".pull.PullXmlActivity" />
+        <activity android:name=".component.fragment.LazyLoadActivity" />
+        <activity android:name=".apt.ioc.IocMainActivity" />
+        <activity android:name=".apt.AptMainActivity" />
+        <activity android:name=".msg.HandlerThreadActivity" />
+        <activity android:name=".msg.MsgMainActivity" />
+        <activity android:name=".component.fragment.FragmentActivity" />
+        <activity android:name=".component.broadcastreceiver.BroadCastMainActivity" />
         <activity android:name=".component.contentprovider.ContentProviderActivity" />
         <activity android:name=".component.service.intent.IntentServiceActivity" />
         <activity android:name=".component.service.bind.BindServiceActivity" />
@@ -103,37 +118,46 @@
         <receiver
             android:name=".component.broadcastreceiver.normal.MyBroadcastReceiver1"
             android:enabled="true"
-            android:exported="true">
+            android:exported="true"
+            android:permission="com.example.broadcast.permission">
             <intent-filter android:priority="1">
                 <action android:name="com.wq.broadcastReceiverType" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".component.broadcastreceiver.normal.MyBroadcastReceiver2"
+        <receiver
+            android:name=".component.broadcastreceiver.normal.MyBroadcastReceiver2"
             android:enabled="true"
-            android:exported="true">
+            android:exported="true"
+            android:permission="com.example.broadcast.permission">
             <intent-filter android:priority="2">
                 <action android:name="com.wq.broadcastReceiverType" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".component.broadcastreceiver.normal.MyBroadcastReceiver3"
+        <receiver
+            android:name=".component.broadcastreceiver.normal.MyBroadcastReceiver3"
             android:enabled="true"
-            android:exported="true">
+            android:exported="true"
+            android:permission="com.example.broadcast.permission">
             <intent-filter android:priority="3">
                 <action android:name="com.wq.broadcastReceiverType" />
             </intent-filter>
         </receiver>
 
         <service android:name=".component.service.start.MyService" />
-
         <service android:name=".component.service.intent.MyIntentService" />
     </application>
 
+    <permission
+        android:name="com.example.broadcast.permission"
+        android:label="BroadcastReceiverPermission"
+        android:protectionLevel="normal" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
 
 </manifest>

@@ -6,15 +6,19 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.wq.andoidlearning.apt.AptMainActivity;
 import com.wq.andoidlearning.arouter.ARouterMainActivity;
 import com.wq.andoidlearning.bitmap.BitmapMainActivity;
 import com.wq.andoidlearning.component.ComponentMainActivity;
 import com.wq.andoidlearning.dagger.DaggerMainActivity;
 import com.wq.andoidlearning.materialdesign.MainMaterialActivity;
+import com.wq.andoidlearning.msg.MsgMainActivity;
 import com.wq.andoidlearning.pattern.PatternMainActivity;
+import com.wq.andoidlearning.pull.PullXmlActivity;
 import com.wq.andoidlearning.rxjava.RxJavaDemoMainActivity;
 import com.wq.andoidlearning.status.StatusBarActivity1;
 import com.wq.andoidlearning.trace.TraceViewMainActivity;
+import com.wq.andoidlearning.window.WindowMainActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +36,33 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        findViewById(R.id.btnPullXml).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PullXmlActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btnMsg).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MsgMainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+        findViewById(R.id.btnApt).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AptMainActivity.class);
+                startActivity(intent);
+            }
+        });
+
         findViewById(R.id.btnComponent).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -100,6 +131,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, BitmapMainActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.btnView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, WindowMainActivity.class);
                 startActivity(intent);
             }
         });

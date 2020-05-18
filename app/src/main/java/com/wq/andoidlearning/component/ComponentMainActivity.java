@@ -6,9 +6,11 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.wq.andoidlearning.MainActivity;
 import com.wq.andoidlearning.R;
 import com.wq.andoidlearning.component.broadcastreceiver.BroadCastMainActivity;
 import com.wq.andoidlearning.component.contentprovider.ContentProviderActivity;
+import com.wq.andoidlearning.component.fragment.FragmentActivity;
 import com.wq.andoidlearning.component.service.ServiceActivity;
 
 public class ComponentMainActivity extends AppCompatActivity {
@@ -38,6 +40,13 @@ public class ComponentMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ComponentMainActivity.this, BroadCastMainActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.btnFragment).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ComponentMainActivity.this, FragmentActivity.class);
                 startActivity(intent);
             }
         });

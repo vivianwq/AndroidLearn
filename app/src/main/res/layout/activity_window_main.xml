@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".window.WindowMainActivity">
+
+    <Button
+        android:id="@+id/btnToastView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2.Toast吐司" />
+
+    <Button
+        android:id="@+id/btnDialogFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3.DialogFragment" />
+
+    <Button
+        android:id="@+id/btnAlertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4.AlertDialog" />
+
+    <Button
+        android:id="@+id/btnPopupWindow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5.PopupWindow" />
+
+    <Button
+        android:id="@+id/btnNotPopupWindow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5.无法显示的PopupWindow" />
+
+
+    <Button
+        android:id="@+id/btnSnackBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6.SnackBar" />
+
+    <Button
+        android:id="@+id/btnRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7.RecyclerView" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="16.视图的载体View" />
+</LinearLayout>

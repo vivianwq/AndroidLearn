@@ -11,6 +11,7 @@ import org.simple.eventbus.EventBus;
 public class MyBroadcastReceiver2 extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
+        System.out.println("onReceive--收到了");
         String resultData = getResultData();
         if (resultData != null)
             EventBus.getDefault().post(new ServiceBean("MyBroadcastReceiver2接收到消息--" + resultData));

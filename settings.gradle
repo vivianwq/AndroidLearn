@@ -1,1 +1,4 @@
 include ':app', ':lib_base', ':module_home', ':module_other', ':module_store', ':appsmall'
+include ':apt'
+include ':processor'
+include ':inject_api'

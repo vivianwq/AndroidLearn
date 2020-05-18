@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,72 +8,107 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-    <Button
-        android:id="@+id/btnFrameWork"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FrameWork" />
-
-    <Button
-        android:id="@+id/btnComponent"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="四大组件" />
-    <Button
-        android:id="@+id/btnStatusBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="状态栏" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
 
-    <Button
-        android:id="@+id/btnBehavior"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Material Design" />
+        <Button
+            android:id="@+id/btnFrameWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FrameWork" />
+
+        <Button
+            android:id="@+id/btnComponent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="四大组件" />
+
+        <Button
+            android:id="@+id/btnStatusBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="状态栏" />
 
 
-    <Button
-        android:id="@+id/btnDagger"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dagger" />
+        <Button
+            android:id="@+id/btnBehavior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Material Design" />
+
+        <Button
+            android:id="@+id/btnMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="消息传递机制" />
+
+        <Button
+            android:id="@+id/btnApt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apt编写查找" />
 
 
-    <Button
-        android:id="@+id/btnRxJava"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RxJava" />
 
-    <Button
-        android:id="@+id/btnPattern"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="设计模式" />
 
-    <Button
-        android:id="@+id/btnARouter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ARouter" />
+        <Button
+            android:id="@+id/btnDagger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dagger" />
 
-    <Button
-        android:id="@+id/btnSmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Small插件化" />
 
-    <Button
-        android:id="@+id/btnTrace"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="性能查看工具" />
+        <Button
+            android:id="@+id/btnRxJava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RxJava" />
 
-    <Button
-        android:id="@+id/btnBitmap"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="图片内存占用分析" />
-</LinearLayout>
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="官方View" />
+
+
+        <Button
+            android:id="@+id/btnPattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设计模式" />
+
+        <Button
+            android:id="@+id/btnARouter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ARouter" />
+
+        <Button
+            android:id="@+id/btnSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Small插件化" />
+
+        <Button
+            android:id="@+id/btnPullXml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XML解析" />
+
+        <Button
+            android:id="@+id/btnTrace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="性能查看工具" />
+
+        <Button
+            android:id="@+id/btnBitmap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="图片内存占用分析" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

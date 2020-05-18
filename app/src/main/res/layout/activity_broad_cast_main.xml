@@ -37,8 +37,31 @@
         android:layout_height="wrap_content"
         android:text="发送有序广播(拦截并传递消息给下一层)--自定义广播" />
 
+    <Button
+        android:id="@+id/btnSendSticky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送粘性广播+普通广播" />
+    <Button
+        android:id="@+id/btnRegisterSticky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册粘性广播" />
+
+    <Button
+        android:id="@+id/btnRegisterNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册普通广播" />
+
+    <Button
+        android:id="@+id/btnLocalBroadCast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本地广播" />
+
     <TextView
         android:id="@+id/tvContent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 </LinearLayout>

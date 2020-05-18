@@ -30,6 +30,7 @@ dependencies {
     implementation 'com.ashokvarma.android:bottom-navigation-bar:2.0.5'
 
     implementation config.dependencies["dagger"]
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     annotationProcessor config.dependencies["dagger-compiler"]
 
     implementation config.dependencies["retrofit"]
@@ -55,6 +56,13 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation project(':apt')
+    implementation project(':inject_api')
+    //gradle3.0以上apt的实现方式
+    annotationProcessor project(':processor')
+    //快速生成.java文件的库
+    implementation 'com.squareup:javapoet:1.8.0'
 }
 repositories {
     mavenCentral()
