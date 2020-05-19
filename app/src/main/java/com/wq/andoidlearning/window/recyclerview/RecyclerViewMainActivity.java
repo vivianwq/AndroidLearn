@@ -42,6 +42,13 @@ public class RecyclerViewMainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.recyclerViewLib).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RecyclerViewMainActivity.this,
+                        RecyclerViewLibActivity.class));
+            }
+        });
         findViewById(R.id.btnLinear).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

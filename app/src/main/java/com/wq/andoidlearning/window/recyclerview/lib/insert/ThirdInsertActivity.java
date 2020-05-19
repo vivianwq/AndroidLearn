@@ -1,0 +1,84 @@
+package com.wq.andoidlearning.window.recyclerview.lib.insert;
+
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+
+import com.wq.andoidlearning.R;
+import com.wq.andoidlearning.window.recyclerview.lib.data.DataProvider;
+import com.wq.andoidlearning.window.recyclerview.lib.data.PersonData;
+import com.wq.andoidlearning.window.recyclerview.lib.refresh.PersonAdapter;
+import com.yc.cn.ycbannerlib.LibUtils;
+
+import org.yczbj.ycrefreshviewlib.item.DividerViewItemLine;
+import org.yczbj.ycrefreshviewlib.view.YCRefreshView;
+
+import java.util.List;
+import java.util.Random;
+
+
+public class ThirdInsertActivity extends AppCompatActivity {
+
+    private YCRefreshView recyclerView;
+    private PersonAdapter adapter;
+
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_refresh_view);
+        recyclerView = findViewById(R.id.recyclerView);
+        final LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(linearLayoutManager);
+        DividerViewItemLine itemDecoration = new
+                DividerViewItemLine( this.getResources().getColor(R.color.color_f9f9f9)
+                , LibUtils.dip2px(this, 1f),
+                LibUtils.dip2px(this, 72), 0);
+        itemDecoration.setDrawLastItem(false);
+        recyclerView.addItemDecoration(itemDecoration);
+        recyclerView.setAdapterWithProgress(adapter = new PersonAdapter(this));
+
+
+        List<PersonData> persons = DataProvider.getPersonList(0);
+        adapter.addAll(persons.subList(0, 3));
+        //设置默认的动画模式
+        DefaultItemAnimator defaultItemAnimator = new DefaultItemAnimator();
+        recyclerView.setItemAnimator(defaultItemAnimator);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_insert, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Random random = new Random();
+        int len = adapter.getCount();
+        if (len > 0) {
+            int pos = random.nextInt(len);
+            List<PersonData> persons = DataProvider.getPersonList(0);
+            PersonData data = persons.get(random.nextInt(persons.size()));
+            switch (item.getItemId()) {
+                case R.id.ic_add:
+                    adapter.insert(data, pos);
+                    break;
+                case R.id.ic_remove:
+                    adapter.remove(pos);
+                    break;
+                case R.id.ic_refresh:
+                    adapter.update(data, pos);
+                    break;
+                default:
+                    break;
+            }
+        }
+        return true;
+    }
+}

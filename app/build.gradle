@@ -52,12 +52,18 @@ dependencies {
         implementation project(":module_store")
     }
 
+    implementation ('com.alibaba.android:vlayout:1.2.8@aar') {
+        transitive = true
+        exclude module: 'support-v4'
+    }
     implementation 'com.github.bumptech.glide:glide:4.6.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     implementation project(':apt')
+    implementation project(':YCRefreshViewLib')
+    implementation 'cn.yc:YCBannerLib:1.4.0'
     implementation project(':inject_api')
     //gradle3.0以上apt的实现方式
     annotationProcessor project(':processor')

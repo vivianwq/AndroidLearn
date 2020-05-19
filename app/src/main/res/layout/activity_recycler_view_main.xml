@@ -38,6 +38,12 @@
         android:layout_height="wrap_content"
         android:text="自定义布局" />
 
+    <Button
+        android:id="@+id/recyclerViewLib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView三方库" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"

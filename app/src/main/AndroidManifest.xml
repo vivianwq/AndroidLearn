@@ -111,6 +111,34 @@
         <activity android:name="com.wq.module_other.NoResultActivity" />
         <activity android:name="com.wq.module_home.ResultClientActivity" />
 
+        <activity android:name=".window.recyclerview.RecyclerViewLibActivity"/>
+        <activity android:name=".window.recyclerview.lib.refresh.RefreshAndMoreActivity1"/>
+        <activity android:name=".window.recyclerview.lib.refresh.RefreshAndMoreActivity2"/>
+        <activity android:name=".window.recyclerview.lib.refresh.RefreshAndMoreActivity3"/>
+        <activity android:name=".window.recyclerview.lib.header.HeaderFooterActivity"/>
+        <activity android:name=".window.recyclerview.lib.insert.ThirdInsertActivity"/>
+        <activity android:name=".window.recyclerview.lib.horizontal.FourHorizontalActivity"/>
+        <activity android:name=".window.recyclerview.lib.multistyle.FiveMultiStyleActivity"/>
+        <activity android:name=".window.recyclerview.lib.sticky.SixStickyHeaderActivity"/>
+        <activity android:name=".window.recyclerview.lib.sticky.SixStickyViewActivity"/>
+        <activity android:name=".window.recyclerview.lib.sticky.SixStickyNormalActivity"/>
+        <activity android:name=".window.recyclerview.lib.staggered.SevenStaggeredGridActivity"/>
+        <activity android:name=".window.recyclerview.lib.staggered.SevenStaggeredActivity"/>
+        <activity android:name=".window.recyclerview.lib.staggered.StageredLoadMoreActivity"/>
+        <activity android:name=".window.recyclerview.lib.collapsing.EightCollapsingActivity"/>
+        <activity android:name=".window.recyclerview.lib.touchmove.NightTouchMoveActivity"/>
+        <activity android:name=".window.recyclerview.lib.touchmove.NightTouchMoveActivity2"/>
+        <activity android:name=".window.recyclerview.lib.delete.DeleteAndTopActivity"/>
+        <activity android:name=".window.recyclerview.lib.normal.NormalRecyclerViewActivity"/>
+        <activity android:name=".window.recyclerview.lib.normal.SpanRecyclerViewActivity"/>
+        <activity android:name=".window.recyclerview.lib.type.TypeActivity"/>
+        <activity android:name=".window.recyclerview.lib.load.LoadMoreActivity"/>
+        <activity android:name=".window.recyclerview.lib.load.LoadMoreActivity2"/>
+        <activity android:name=".window.recyclerview.lib.layout.LayoutActivity"/>
+        <activity android:name=".window.recyclerview.lib.type.HomePageActivity"/>
+        <activity android:name=".window.recyclerview.lib.tag.TagRecyclerViewActivity"/>
+        <activity android:name=".window.recyclerview.lib.scroll.ScrollActivity"/>
+
         <provider
             android:name=".component.contentprovider.MyContentProvider"
             android:authorities="com.wq.andoidlearning.component.contentprovider.MyContentProvider"

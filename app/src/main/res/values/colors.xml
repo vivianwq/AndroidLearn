@@ -7,4 +7,6 @@
     <color name="blackText">#000000</color>
     <!--字体的颜色 黑色1 -->
     <color name="blackText1">#464C56</color>
+    <color name="color_f9f9f9">#f9f9f9</color>
+    <color name="color_666666">#ff666666</color>
 </resources>
