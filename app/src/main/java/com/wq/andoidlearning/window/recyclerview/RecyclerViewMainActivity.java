@@ -1,5 +1,6 @@
 package com.wq.andoidlearning.window.recyclerview;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -15,6 +16,7 @@ import androidx.recyclerview.widget.PagerSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.wq.andoidlearning.R;
+import com.wq.andoidlearning.window.recyclerview.verticalrecyclerview.VerticalViewActivity;
 
 import java.util.ArrayList;
 
@@ -31,6 +33,14 @@ public class RecyclerViewMainActivity extends AppCompatActivity {
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
+
+        findViewById(R.id.btnMyView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RecyclerViewMainActivity.this,
+                        VerticalViewActivity.class));
+            }
+        });
 
         findViewById(R.id.btnLinear).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,6 +102,7 @@ public class RecyclerViewMainActivity extends AppCompatActivity {
                 }
                 multipleItemAdapter.addAll(list);
                 multipleItemAdapter.notifyDataSetChanged();
+
 
                 recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
                     private boolean isSlidingUpward = false;

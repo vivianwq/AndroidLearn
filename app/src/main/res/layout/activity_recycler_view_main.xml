@@ -32,6 +32,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="网络不规则布局" />
+    <Button
+        android:id="@+id/btnMyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义布局" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
