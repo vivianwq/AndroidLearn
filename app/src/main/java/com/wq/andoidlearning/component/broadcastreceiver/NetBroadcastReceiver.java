@@ -16,7 +16,7 @@ public class NetBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        System.out.println("网络状态发生变化");
+        System.out.println("网络状态发生变化"+this.hashCode());
         //检测API是不是小于21，因为到了API21之后getNetworkInfo(int networkType)方法被弃用
         if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
 
@@ -60,7 +60,11 @@ public class NetBroadcastReceiver extends BroadcastReceiver {
             }
             EventBus.getDefault().post(new ServiceBean(sb.toString()));
         }
+
     }
+
+
+
 
 
 }

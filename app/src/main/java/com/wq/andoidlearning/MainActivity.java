@@ -3,14 +3,21 @@ package com.wq.andoidlearning;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.meituan.android.walle.ChannelInfo;
+import com.meituan.android.walle.WalleChannelReader;
 import com.wq.andoidlearning.apt.AptMainActivity;
 import com.wq.andoidlearning.arouter.ARouterMainActivity;
 import com.wq.andoidlearning.bitmap.BitmapMainActivity;
+import com.wq.andoidlearning.chapter15.Chapter15Activity;
+import com.wq.andoidlearning.chapter9.AnimMainActivity;
 import com.wq.andoidlearning.component.ComponentMainActivity;
 import com.wq.andoidlearning.dagger.DaggerMainActivity;
+import com.wq.andoidlearning.improve.ImproveMainActivity;
 import com.wq.andoidlearning.materialdesign.MainMaterialActivity;
 import com.wq.andoidlearning.msg.MsgMainActivity;
 import com.wq.andoidlearning.pattern.PatternMainActivity;
@@ -20,8 +27,11 @@ import com.wq.andoidlearning.status.StatusBarActivity1;
 import com.wq.andoidlearning.trace.TraceViewMainActivity;
 import com.wq.andoidlearning.window.WindowMainActivity;
 
+import java.util.Map;
+
 
 public class MainActivity extends AppCompatActivity {
+    private TextView tvContent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +39,57 @@ public class MainActivity extends AppCompatActivity {
 //        StatusBarActivity1.setStatusBarTransparent(MainActivity.this);
 //        setUp();
         setContentView(R.layout.activity_main);
+        tvContent=findViewById(R.id.tvContent);
+        findViewById(R.id.btnWay).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+//                String channel = WalleChannelReader.getChannel(MainActivity.this);
+                StringBuilder stringBuilder=new StringBuilder();
+                ChannelInfo channelInfo= WalleChannelReader.getChannelInfo(MainActivity.this);
+                if (channelInfo != null) {
+                    String channel = channelInfo.getChannel();
+                    Map<String, String> extraInfo = channelInfo.getExtraInfo();
+                    stringBuilder.append(channel+"---");
+                    stringBuilder.append(extraInfo.get("buildtime")+"---");
+                    stringBuilder.append(extraInfo.get("hash")+"---");
+                }
+                // 或者也可以直接根据key获取
+                String value = WalleChannelReader.get(MainActivity.this, "alias");
+                stringBuilder.append(value+"---");
+                tvContent.setText(stringBuilder);
+                Toast.makeText(MainActivity.this,stringBuilder.toString(), Toast.LENGTH_LONG)
+                        .show();
+            }
+        });
         findViewById(R.id.btnStatusBar).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, StatusBarActivity1.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.btnChapter9).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AnimMainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btnChapter15).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Chapter15Activity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        findViewById(R.id.btnImprove).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ImproveMainActivity.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +109,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
 
         findViewById(R.id.btnApt).setOnClickListener(new View.OnClickListener() {

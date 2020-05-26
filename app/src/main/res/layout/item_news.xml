@@ -19,7 +19,6 @@
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/iv_news_image"
         android:layout_marginStart="10dp"
         android:textSize="14sp"
         android:text="杨充是个大神级别的人物"/>
@@ -38,7 +37,6 @@
         android:id="@+id/tv_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/iv_news_image"
         android:layout_marginStart="10dp"
         android:layout_below="@+id/tv_content"
         android:layout_marginTop="3dp"

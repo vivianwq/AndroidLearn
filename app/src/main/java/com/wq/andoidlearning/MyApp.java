@@ -2,6 +2,8 @@ package com.wq.andoidlearning;
 
 import android.app.Application;
 
+import androidx.multidex.MultiDex;
+
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.wq.lib_base.util.Utils;
 
@@ -21,6 +23,7 @@ public class MyApp extends Application {
             //线上版本需要关闭,否则有安全风险)
             ARouter.openDebug();
         }
+        MultiDex.install(this);
         ARouter.init(this);
     }
 }

@@ -62,7 +62,7 @@ public class WindowMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(WindowMainActivity.this);
-                builder.setIcon(R.mipmap.ic_launcher);
+                builder.setIcon(R.mipmap.ic_app);
                 builder.setMessage("潇湘剑雨");
                 builder.setTitle("这个是标题");
                 builder.setView(R.layout.activity_window_main);

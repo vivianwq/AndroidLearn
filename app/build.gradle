@@ -1,6 +1,10 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
+apply plugin: 'walle'
+apply plugin: 'com.atom.resourceflavors' //应用插件
+apply from: 'flavors.gradle'
+
 def config = rootProject.ext
 
 android {
@@ -10,16 +14,53 @@ android {
         applicationId "com.wq.andoidlearning"
         minSdkVersion 19
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    signingConfigs {
+        sign {
+            storeFile file("keystore/sign-debug.jks")
+            storePassword "hnnmy2019"
+            keyAlias "key0"
+            keyPassword "hnnmy2019"
         }
     }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.sign
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.sign
+
+            applicationIdSuffix 'debug'
+        }
+    }
+
+
+}
+
+rfp{
+    resourceDir 'defindpic'
+    appName 'app'
+}
+walle {
+    apkOutputFolder = new File("${project.buildDir}/outputs/channels")
+    apkFileNameFormat = '${appName}-${packageName}-${channel}-${buildType}-v${versionName}-${versionCode}-${buildTime}-${flavorName}.apk'
+    //configFile与channelFile两者必须存在一个，否则无法生成渠道包。两者都存在时优先执行configFile
+//    channelFile = new File("${project.getProjectDir()}/channel")
+    //configFile = new File("${project.getProjectDir()}/config.json")
+    // 渠道&额外信息配置文件，与channelFile互斥
+    configFile = new File("${project.getProjectDir()}/config.json")
 }
 
 dependencies {
@@ -52,7 +93,7 @@ dependencies {
         implementation project(":module_store")
     }
 
-    implementation ('com.alibaba.android:vlayout:1.2.8@aar') {
+    implementation('com.alibaba.android:vlayout:1.2.8@aar') {
         transitive = true
         exclude module: 'support-v4'
     }
@@ -69,6 +110,11 @@ dependencies {
     annotationProcessor project(':processor')
     //快速生成.java文件的库
     implementation 'com.squareup:javapoet:1.8.0'
+
+    implementation 'com.squareup.leakcanary:leakcanary-android:2.2'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.airbnb.android:lottie:3.4.0'
+    implementation 'com.meituan.android.walle:library:1.1.6'
 }
 repositories {
     mavenCentral()

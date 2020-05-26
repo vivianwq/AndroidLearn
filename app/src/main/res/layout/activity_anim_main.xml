@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chapter9.AnimMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="帧动画" />
+
+        <Button
+            android:id="@+id/btnFrameStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="帧动画开始" />
+
+        <Button
+            android:id="@+id/btnFrameStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="帧动画结束" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="补间动画" />
+
+
+        <Button
+            android:id="@+id/btnAlphaXml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="补间动画透明度xml" />
+
+        <Button
+            android:id="@+id/btnAlphaCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="补间动画透明度Code" />
+
+
+        <Button
+            android:id="@+id/btnScaleXml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="补间动画缩放xml" />
+
+        <Button
+            android:id="@+id/btnScaleCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="补间动画缩放Code" />
+
+        <Button
+            android:id="@+id/btnTransXml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="补间动画平移xml" />
+
+        <Button
+            android:id="@+id/btnTransCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="补间动画平移Code" />
+
+        <Button
+            android:id="@+id/btnRotateXml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="补间旋转平移xml" />
+
+        <Button
+            android:id="@+id/btnRotateCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="补间旋转平移Code" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="属性动画" />
+
+        <Button
+            android:id="@+id/btnAnimatorXML"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="属性动画setXml" />
+
+        <Button
+            android:id="@+id/btnAnimatorCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="属性动画setCode" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="ValueAnimator估值器" />
+
+        <Button
+            android:id="@+id/btnValueAnimatorXML"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="估值器setXml" />
+
+        <Button
+        android:id="@+id/btnValueAnimatorCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="估值器setCode" />
+
+        <Button
+            android:id="@+id/btnLottie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lottie--Json" />
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+
+    </LinearLayout>
+</ScrollView>

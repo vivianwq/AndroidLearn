@@ -99,6 +99,12 @@
             android:layout_height="wrap_content"
             android:text="XML解析" />
 
+
+        <Button
+            android:id="@+id/btnImprove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="优化" />
         <Button
             android:id="@+id/btnTrace"
             android:layout_width="match_parent"
@@ -106,9 +112,34 @@
             android:text="性能查看工具" />
 
         <Button
+            android:id="@+id/btnChapter9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第九章-动画机制" />
+
+
+        <Button
+            android:id="@+id/btnChapter15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第15章--存储" />
+
+        <Button
             android:id="@+id/btnBitmap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="图片内存占用分析" />
+
+        <Button
+            android:id="@+id/btnWay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="多渠道打包" />
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_margin="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

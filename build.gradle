@@ -6,11 +6,17 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+        maven {
+            url 'https://dl.bintray.com/mrqatom/define_flavor' //插件所在的目录
+        }
     }
     dependencies {
+        classpath 'com.meituan.android.walle:plugin:1.1.6'
+
         classpath 'com.android.tools.build:gradle:3.6.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.atom.plugin:ResourceFlavorsPlugin:2.1.0'
+
         //1.引入Small依赖，必选。
 //        classpath 'net.wequick.tools.build:gradle-small:1.2.0-alpha3'
 //        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
