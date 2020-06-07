@@ -4,6 +4,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'walle'
 apply plugin: 'com.atom.resourceflavors' //应用插件
 apply from: 'flavors.gradle'
+apply plugin: 'com.google.protobuf'//添加插件
 
 def config = rootProject.ext
 
@@ -46,10 +47,34 @@ android {
         }
     }
 
+    sourceSets {
+        main {
+            proto {
+                // In addition to the default 'src/main/proto'
+                srcDir 'src/main/proto'
+                //srcDir 'src/main/protocolbuffers'
+                // In addition to the default '**/*.proto' (use with caution).
+                // Using an extension other than 'proto' is NOT recommended,
+                // because when proto files are published along with class files, we can
+                // only tell the type of a file from its extension.
+                include '**/*.proto'
+            }
+            java {
+                //...
+            }
+        }
+        test {
+            proto {
+                // In addition to the default 'src/test/proto'
+                srcDir 'src/test/protocolbuffers'
+            }
+        }
+    }
+
 
 }
 
-rfp{
+rfp {
     resourceDir 'defindpic'
     appName 'app'
 }
@@ -63,6 +88,28 @@ walle {
     configFile = new File("${project.getProjectDir()}/config.json")
 }
 
+
+//添加此段
+protobuf {
+    //配置protoc编译器
+    protoc {
+        artifact = 'com.google.protobuf:protoc:3.0.0-alpha-3'
+    }
+//配置生成java插件
+    plugins {
+        javalite {
+            artifact = 'com.google.protobuf:protoc-gen-javalite:3.0.0'
+        }
+    }
+    //这里配置生成目录，编译后会在build的目录下生成对应的java文件
+    generateProtoTasks {
+        all().each { task ->
+            task.plugins {
+                javalite {}
+            }
+        }
+    }
+}
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0'
@@ -72,6 +119,8 @@ dependencies {
 
     implementation config.dependencies["dagger"]
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation files('libs/utils.jar')
     annotationProcessor config.dependencies["dagger-compiler"]
 
     implementation config.dependencies["retrofit"]
@@ -110,6 +159,8 @@ dependencies {
     annotationProcessor project(':processor')
     //快速生成.java文件的库
     implementation 'com.squareup:javapoet:1.8.0'
+    implementation 'com.github.markzhai:blockcanary-android:1.5.0'
+    implementation 'com.google.protobuf:protobuf-lite:3.0.1'
 
     implementation 'com.squareup.leakcanary:leakcanary-android:2.2'
     implementation 'androidx.multidex:multidex:2.0.1'

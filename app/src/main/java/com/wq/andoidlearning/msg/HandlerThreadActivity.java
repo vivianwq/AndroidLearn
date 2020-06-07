@@ -13,7 +13,9 @@ import com.wq.andoidlearning.R;
 
 public class HandlerThreadActivity extends AppCompatActivity {
 
+
     private TextView tvContent;
+
     private Handler mainHandler = new Handler() {
         @Override
         public void handleMessage(@NonNull Message msg) {
@@ -24,6 +26,7 @@ public class HandlerThreadActivity extends AppCompatActivity {
     };
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_handler_thread);

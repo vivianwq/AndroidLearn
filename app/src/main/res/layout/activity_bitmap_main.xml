@@ -60,4 +60,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ScaleType多样式" />
+
+    <Button
+        android:id="@+id/btnDemo5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bitmap压缩" />
+
+    <Button
+        android:id="@+id/btnDemo6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义图片加载组件" />
 </LinearLayout>

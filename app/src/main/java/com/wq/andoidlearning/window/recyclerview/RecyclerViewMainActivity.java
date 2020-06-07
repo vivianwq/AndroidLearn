@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.PagerSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.wq.andoidlearning.R;
+import com.wq.andoidlearning.view.ListViewActivity;
 import com.wq.andoidlearning.window.recyclerview.verticalrecyclerview.VerticalViewActivity;
 
 import java.util.ArrayList;
@@ -205,6 +206,14 @@ public class RecyclerViewMainActivity extends AppCompatActivity {
                 }
                 gridItemAdapter.addAll(list);
                 gridItemAdapter.notifyDataSetChanged();
+            }
+        });
+
+        findViewById(R.id.listView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RecyclerViewMainActivity.this,
+                        ListViewActivity.class));
             }
         });
 

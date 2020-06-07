@@ -15,6 +15,8 @@ import com.wq.andoidlearning.bitmap.demo1.BigImageViewActivity;
 import com.wq.andoidlearning.bitmap.demo2.RecyclerViewBitmapActivity;
 import com.wq.andoidlearning.bitmap.demo3.BigImageView2Activity;
 import com.wq.andoidlearning.bitmap.demo4.ScaleTypeActivity;
+import com.wq.andoidlearning.bitmap.demo5.Demo5Activity;
+import com.wq.andoidlearning.doodle.DoodleActivity;
 
 public class BitmapMainActivity extends AppCompatActivity {
 
@@ -48,6 +50,18 @@ public class BitmapMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(BitmapMainActivity.this, ScaleTypeActivity.class));
+            }
+        });
+        findViewById(R.id.btnDemo5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(BitmapMainActivity.this, Demo5Activity.class));
+            }
+        });
+        findViewById(R.id.btnDemo6).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(BitmapMainActivity.this, DoodleActivity.class));
             }
         });
     }

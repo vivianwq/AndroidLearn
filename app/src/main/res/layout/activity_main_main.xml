@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wq.andoidlearning.chapter16.MainMainActivity">
+
+    <Button
+        android:id="@+id/btnComponent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.Android基础组件" />
+
+    <Button
+        android:id="@+id/btnStartTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2.Activity启动模式" />
+
+    <Button
+        android:id="@+id/btnService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2.启动服务Service" />
+
+    <Button
+        android:id="@+id/btnFragmentState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fragment-vp" />
+
+    <com.wq.andoidlearning.chapter16.MyView
+        android:background="#ffc"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+
+    <com.wq.andoidlearning.chapter16.MyView
+        android:background="#fcf"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"/>
+
+</LinearLayout>

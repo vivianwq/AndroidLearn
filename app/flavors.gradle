@@ -1,5 +1,5 @@
 def flavorNames = ["define1", "define2", "define3", "define4", "define5"]
-def applicationIds = ["com.atom.define1", "com.atom.define2", "com.atom.define3",
+def applicationIds = ["com.wq", "com.atom.define2", "com.atom.define3",
                       "com.atom.define4", "com.atom.define5"]
 def appNames = ["定制1", "定制2", "定制3", "定制4", "定制5"]
 

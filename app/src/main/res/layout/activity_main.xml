@@ -1,145 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/text"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+
+    <com.wq.andoidlearning.view.OverScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-
-        <Button
-            android:id="@+id/btnFrameWork"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="FrameWork" />
-
-        <Button
-            android:id="@+id/btnComponent"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="四大组件" />
-
-        <Button
-            android:id="@+id/btnStatusBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="状态栏" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
 
 
-        <Button
-            android:id="@+id/btnBehavior"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Material Design" />
+            <Button
+                android:id="@+id/btnFrameWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FrameWork" />
 
-        <Button
-            android:id="@+id/btnMsg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="消息传递机制" />
+            <Button
+                android:id="@+id/btnBuff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ProtocolBuff" />
 
-        <Button
-            android:id="@+id/btnApt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Apt编写查找" />
+            <Button
+                android:id="@+id/btnComponent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="四大组件" />
 
-
-
-
-        <Button
-            android:id="@+id/btnDagger"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dagger" />
+            <Button
+                android:id="@+id/btnJvm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JVM原理" />
 
 
-        <Button
-            android:id="@+id/btnRxJava"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="RxJava" />
-
-        <Button
-            android:id="@+id/btnView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="官方View" />
+            <Button
+                android:id="@+id/btnStatusBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态栏" />
 
 
-        <Button
-            android:id="@+id/btnPattern"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="设计模式" />
+            <Button
+                android:id="@+id/btnBehavior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Material Design" />
 
-        <Button
-            android:id="@+id/btnARouter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ARouter" />
+            <Button
+                android:id="@+id/btnMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="消息传递机制" />
 
-        <Button
-            android:id="@+id/btnSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Small插件化" />
-
-        <Button
-            android:id="@+id/btnPullXml"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="XML解析" />
+            <Button
+                android:id="@+id/btnApt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apt编写查找" />
 
 
-        <Button
-            android:id="@+id/btnImprove"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="优化" />
-        <Button
-            android:id="@+id/btnTrace"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="性能查看工具" />
+            <Button
+                android:id="@+id/btnData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="数据结构" />
 
-        <Button
-            android:id="@+id/btnChapter9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="第九章-动画机制" />
+            <Button
+                android:id="@+id/btnDagger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dagger" />
 
 
-        <Button
-            android:id="@+id/btnChapter15"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="第15章--存储" />
+            <Button
+                android:id="@+id/btnRxJava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RxJava" />
 
-        <Button
-            android:id="@+id/btnBitmap"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="图片内存占用分析" />
+            <Button
+                android:id="@+id/btnView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="官方View" />
 
-        <Button
-            android:id="@+id/btnWay"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="多渠道打包" />
 
-        <TextView
-            android:id="@+id/tvContent"
-            android:layout_margin="200dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-</androidx.core.widget.NestedScrollView>
+            <Button
+                android:id="@+id/btnPattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设计模式" />
+
+            <Button
+                android:id="@+id/btnARouter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ARouter" />
+
+            <Button
+                android:id="@+id/btnSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Small插件化" />
+
+            <Button
+                android:id="@+id/btnPullXml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="XML解析" />
+
+
+            <Button
+                android:id="@+id/btnImprove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="优化" />
+
+            <Button
+                android:id="@+id/btnTrace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="性能查看工具" />
+
+            <Button
+                android:id="@+id/btnChapter9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第九章-动画机制" />
+
+
+            <Button
+                android:id="@+id/btnChapter15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第15章--存储" />
+
+            <Button
+                android:id="@+id/btnBitmap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="图片内存占用分析" />
+
+            <Button
+                android:id="@+id/btnWay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="多渠道打包" />
+
+            <Button
+                android:id="@+id/btnAnr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anr" />
+
+            <Button
+                android:id="@+id/btnTouch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="事件分发" />
+
+            <Button
+                android:id="@+id/btnProcess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="启动多进程" />
+
+            <Button
+                android:id="@+id/btnLast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="最后一章" />
+
+            <Button
+                android:id="@+id/btnView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自定义View" />
+
+            <Button
+                android:id="@+id/btnLoadPatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="加载一下热修复文件" />
+
+            <Button
+                android:id="@+id/btnHotFix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="热修复" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </com.wq.andoidlearning.view.OverScrollView>
+</LinearLayout>
